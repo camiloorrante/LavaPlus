@@ -19,7 +19,7 @@ public class LavaPlus extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/lavaplus/views/XmlLogin.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/lavaplus/views/XmlPuntoVenta.fxml"));
         
         Scene scene = new Scene(root);
         
