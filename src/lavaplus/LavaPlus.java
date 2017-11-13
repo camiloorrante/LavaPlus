@@ -10,22 +10,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import lavaplus.controllers.DocumentController;
 
 /**
  *
  * @author camilo
  */
 public class LavaPlus extends Application {
-    
+    DocumentController docController;
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/lavaplus/views/XmlPuntoVenta.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setTitle("Lava Plus v1.0");
-        stage.setScene(scene);
-        stage.show();
+        docController = DocumentController.getInstance();
+        docController.setStage(stage);
+        docController.mostrarLogin();
     }
 
     /**

@@ -7,12 +7,14 @@
 <?import javafx.scene.effect.PerspectiveTransform?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="320" style="-fx-background-color: #f1f8e9;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lavaplus.controllers.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="320" style="-fx-background-color: #f1f8e9;" xmlns="http://javafx.com/javafx/9" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lavaplus.controllers.LoginController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <JFXTextField layoutX="65.0" layoutY="157.0" opacity="0.49" prefHeight="26.0" prefWidth="198.0" promptText="Usuario" />
       <JFXPasswordField layoutX="65.0" layoutY="215.0" opacity="0.49" prefHeight="26.0" prefWidth="198.0" promptText="Contraseña" />
-      <JFXButton layoutX="65.0" layoutY="300.0" prefHeight="26.0" prefWidth="198.0" style="-fx-background-color: #03a9f4;" text="Ingresar" textAlignment="CENTER" textFill="#ffd9d9">
+      <JFXButton layoutX="65.0" layoutY="300.0" prefHeight="26.0" prefWidth="198.0" style="-fx-background-color: #03a9f4;" text="Ingresar" 
+                 textAlignment="CENTER" textFill="#ffd9d9" onAction="#handleButtonAction">
          <effect>
             <PerspectiveTransform />
          </effect>
